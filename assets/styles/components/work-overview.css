@@ -1,2 +1,51 @@
-/* Work Overview
-############################################################################ */
+.work-overview {
+  display: grid;
+  margin: 0;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+}
+
+.work-item {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 15px 30px;
+  border-bottom: 2px solid #c13b77;
+  background-color: var(--color-item);
+}
+
+.work-image {
+  width: 100px;
+  height: 100px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.work-info h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.work-author {
+  color: #c13b77;
+  font-size: 14px;
+}
+
+@media (width <= 768px) {
+  .work-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .work-item {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .work-image {
+    width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 15px;
+  }
+}

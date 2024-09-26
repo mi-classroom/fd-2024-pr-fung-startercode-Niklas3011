@@ -34,23 +34,24 @@
   /* Base Colors */
   --color-steingrau: hsl(42deg 3% 55% / 60%);
   --color-lichtgrau: hsl(100deg 3% 77% / 100%);
-  --color-hellgrau: #BBBAB7;
-  --color-blaugrau: #82899A;
+  --color-hellgrau: #bbbab7;
+  --color-blaugrau: #82899a;
   --color-pink: #d16;
-  --color-green: #10CFA3;
-  --color-blue: #28C0DE;
-  --color-darkblue: #047A91;
-  --color-yellow: #DECC28;
-  --color-light: #E6DED1;
+  --color-green: #10cfa3;
+  --color-blue: #28c0de;
+  --color-darkblue: #047a91;
+  --color-yellow: #decc28;
+  --color-light: #e6ded1;
   --color-lightest: #fff;
   --color-lighten: rgb(255 255 255 / 20%);
   --color-lighten-strong: rgb(255 255 255 / 50%);
-  --color-dark: #57544F;
+  --color-dark: #57544f;
   --color-darker: #000;
   --color-darkest: #000;
   --color-darken: rgb(0 0 0 / 20%);
   --color-darken-strong: rgb(0 0 0 / 70%);
   --color-darken-light: rgb(20 20 0 / 5%);
+  --color-item: #f2eee8;
 
   /* Functional Colors */
   --interaction-color: var(--color-dark);
