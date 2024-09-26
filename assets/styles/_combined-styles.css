@@ -5,11 +5,12 @@
 @import url("variables.css");
 @import url("base.css");
 @import url("composition.css");
-@import url("components/single-work.css");
 
 /* Compontents 
 ############################################################################ */
 @import url("components/artefact-list.css");
+@import url("components/single-work.css");
+@import url("components/work-images.css");
 @import url("components/avatar.css");
 @import url("components/footer.css");
 @import url("components/header.css");

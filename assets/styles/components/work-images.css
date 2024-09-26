@@ -1,0 +1,33 @@
+[data-js-images] {
+  display: grid;
+  gap: 20px;
+}
+
+@media (width >= 1024px) {
+  [data-js-images] {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (width <= 1023px) {
+  [data-js-images] {
+    grid-template-columns: 1fr;
+  }
+}
+
+.image-containers {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 100%;
+}
+
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}

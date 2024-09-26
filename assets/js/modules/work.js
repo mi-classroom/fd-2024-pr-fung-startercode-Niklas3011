@@ -1,4 +1,4 @@
-// work.js (modules/content.js)
+import { fetchImages } from "./images.js";
 
 export function fetchSingleData() {
   console.log("Hello2");
@@ -63,6 +63,7 @@ export function fetchSingleData() {
       work.url
     }</a></p>
     <div>${work.abstract}</div>
+
   `;
 
     // Insert the details into the works section
@@ -71,4 +72,5 @@ export function fetchSingleData() {
 
   // Fetch and render the work entry
   fetchAndRenderWork();
+  fetchImages();
 }
