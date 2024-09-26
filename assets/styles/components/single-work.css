@@ -1,0 +1,31 @@
+.single-work-title {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.single-work-image {
+  width: 60%;
+  height: auto; /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto 20px auto; /* Center the image and add bottom margin */
+}
+
+.single-work-small-title {
+  color: black;
+}
+
+.single-work-link {
+  color: var(--color-pink);
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .single-work-image {
+    width: 100%; /* Make the image take up the full width on small screens */
+    margin: 0 0 20px 0; /* Adjust margin as needed */
+  }
+
+  .single-work-title {
+    font-size: 1.2rem; /* Optional: decrease title size on small screens */
+  }
+}

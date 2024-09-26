@@ -32,6 +32,17 @@
   font-size: 14px;
 }
 
+.work-title-link {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.work-title-link:hover,
+.work-title-link:focus {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
 @media (width <= 768px) {
   .work-overview {
     grid-template-columns: 1fr;

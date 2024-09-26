@@ -5,6 +5,7 @@
 @import url("variables.css");
 @import url("base.css");
 @import url("composition.css");
+@import url("components/single-work.css");
 
 /* Compontents 
 ############################################################################ */
@@ -30,7 +31,6 @@
 @import url("layouts/simple.css");
 @import url("layouts/work.css");
 @import url("layouts/work-results.css");
-
 
 /* Utilities 
 ############################################################################ */

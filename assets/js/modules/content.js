@@ -1,5 +1,4 @@
 function fetchAndDisplayWorks() {
-  console.log("hello");
   const worksUrl = "http://0.0.0.0:4000/works.json";
 
   const worksList = document.querySelector("[data-js-finished-works]");
@@ -24,8 +23,13 @@ function fetchAndDisplayWorks() {
         const workInfo = document.createElement("div");
         workInfo.classList.add("work-info");
 
+        const titleLink = document.createElement("a");
+        titleLink.href = work.url;
+        titleLink.textContent = work.title;
+        titleLink.classList.add("work-title-link");
+
         const title = document.createElement("h3");
-        title.textContent = work.title;
+        title.appendChild(titleLink);
 
         const authorInfo = document.createElement("p");
         authorInfo.classList.add("work-author");
