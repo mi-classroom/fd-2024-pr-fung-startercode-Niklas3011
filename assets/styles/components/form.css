@@ -1,5 +1,61 @@
 /* stylelint-disable no-descending-specificity */
 
+form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 20px 20px 20px 0;
+}
+
+label {
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: white;
+}
+
+textarea::placeholder {
+  color: white;
+}
+
+input,
+textarea {
+  padding: 20px 0 5px;
+  border: none;
+  border-bottom: 2px solid var(--color-green);
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom-color: var(--color-blue);
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--color-pink);
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.div-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+button:hover {
+  background-color: #c13b77;
+}
 
 /* Form
 ############################################################################ */
