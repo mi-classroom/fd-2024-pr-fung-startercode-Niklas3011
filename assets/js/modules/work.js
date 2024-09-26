@@ -36,8 +36,6 @@ export function fetchSingleData() {
       });
   }
 
-  // Function to render the work details inside the section element
-  // Function to render the work details inside the section element
   function renderWorkDetails(work) {
     // Create HTML structure for the work details
     const workDetails = `
@@ -74,3 +72,8 @@ export function fetchSingleData() {
   fetchAndRenderWork();
   fetchImages();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  hljs.highlightAll();
+  fetchSingleData();
+});

@@ -32,6 +32,22 @@
   font-size: 14px;
 }
 
+.load-more-button {
+  display: block;
+  padding: 10px 20px;
+  border: none;
+  margin: 20px 0; /* Remove the auto margin to ensure it's aligned to the left */
+  background-color: #c13b77;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left; /* Left-align text */
+}
+
+.load-more-button:hover {
+  background-color: #a52b63;
+}
+
 .work-title-link {
   color: inherit !important;
   text-decoration: none !important;
