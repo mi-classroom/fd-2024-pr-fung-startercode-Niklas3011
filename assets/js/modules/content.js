@@ -10,6 +10,19 @@ function fetchAndDisplay() {
 
   let allWorks = [];
 
+  const modal = document.createElement("div");
+  modal.classList.add("image-modal");
+  modal.style.display = "none";
+  document.body.appendChild(modal);
+
+  const modalImg = document.createElement("img");
+  modalImg.classList.add("modal-image");
+  modal.appendChild(modalImg);
+
+  modal.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
   fetch(worksUrl)
     .then((response) => {
       if (!response.ok) {
@@ -38,6 +51,11 @@ function fetchAndDisplay() {
       img.src = work.image ? work.image : "path/to/default-image.jpg";
       img.alt = `Image for ${work.title}`;
       img.classList.add("work-image");
+
+      img.addEventListener("click", () => {
+        modalImg.src = img.src;
+        modal.style.display = "block";
+      });
 
       const workInfo = document.createElement("div");
       workInfo.classList.add("work-info");
